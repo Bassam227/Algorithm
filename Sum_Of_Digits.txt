@@ -1,0 +1,36 @@
+public class Sum_Of_Digits 
+{ 
+    static int sum1 = 0;
+    static int sum2 =0;
+ 
+    public static void main(String[] args){
+        System.out.println(d(2594));
+       
+    }
+    
+    public static int d(int n){
+      
+         sum1 += n%10;
+         
+         
+         if(n%10 == n){
+           
+             
+             return dd(sum1);
+         }
+         n = n/10;
+     
+        return d(n);
+    }
+     public static int dd(int n){
+         
+         sum2 += n%10;
+         
+         if(n%10 == n){
+            
+             return sum2;
+         }
+         n = n/10;
+         return dd(n);
+     }
+} 
